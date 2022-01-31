@@ -1,0 +1,14 @@
+# .github/workflows/git-sync.yml
+
+on: push
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "https://McGill-Team-3@dev.azure.com/McGill-Team-3/Gameslab/_git/Gameslab"
+          source_branch: "main"
+          destination_repo: "https://github.com/njchensl/ubisoft-gamelab-mcgill2-w2022.git"
+          destination_branch: "main"
