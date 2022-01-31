@@ -1,0 +1,2 @@
+- name: GitHub Repo Sync
+  uses: repo-sync/github-sync@v2.3.0
